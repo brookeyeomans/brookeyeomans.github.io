@@ -1,0 +1,543 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/chalkboard.jpeg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif; /* Specify a fallback font family */
+    color: white;
+}
+
+
+header {
+    font-size: 36px;
+    color: #ed752f; /* Change the text color to orange */
+    font-weight: bold; /* Make the text bold */
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+    letter-spacing: 5px; /* Increase the letter spacing */
+}
+
+
+h2 {
+    font-family: Baskerville, serif;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: #ed752f; /* Change the text color to orange */
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-family: Baskerville,serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+
+h4 {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 2;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h5 {
+    font-family: Baskerville, serif;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    letter-spacing: ;
+}
+
+
+
+
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 20px; /* Reduce horizontal spacing between the subpages */
+    color: white; /* Change the text color to white */
+    font-family: Arial, sans-serif; /* Use Arial for subpage links */
+    font-size: 12px;
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+    letter-spacing: 2px;
+}
+
+nav a:hover {
+    color: #ed752f; /* Change text color on hover (you can choose your desired color) */
+}
+
+.main-image {
+    max-width: 60%; /* Set a maximum width to ensure it fits within the viewport */
+    height: auto;
+    display: block; /* To center the image horizontally */
+    margin: 0 auto; /* To center the image horizontally */
+    margin-top: 30px;
+}
+
+.altlogo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 10%; /* Adjust the size of the logo as needed */
+    height: auto;
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+    transform: scale(1); /* Prevent scaling on zoom */
+}
+
+.rotate img {
+    transition: 1s ease;
+}
+
+.rotate img:hover {
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    transition: 1s ease;
+}
+
+
+
+
+/* Additional styles for the fork knife image */
+.fork-knife-image {
+    position: absolute; /* Position the image absolutely within the body */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+    width: 80%; /* Adjust the size as needed */
+    height: auto;
+    /* Add other styles (e.g., border, padding, etc.) as desired */
+}
+
+
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+.images-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; /* Adjust the margin above the row */
+}
+
+.image-link {
+    text-decoration: none; /* Remove default underline for anchor tags */
+}
+
+.image-container {
+    margin: 20px; /* Adjust the margin between image containers */
+    text-align: center; /* Center the text */
+}
+
+.recipe-image {
+    max-width: 70%;
+    height: auto;
+}
+
+.image-text {
+    text-align: center; /* Center the text below each image */
+    padding-top: 30px;
+}
+
+.rotate img {
+    transition: 1s ease;
+}
+
+.rotate img:hover {
+    transform: rotate(-10deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.pan.types {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    align-items: center; /* Center-align items vertically */
+    justify-content: center; /* Center-align items horizontally */
+}
+
+.pan-item {
+    text-align: center; /* Center-align text */
+    margin: 20px; /* Adjust margin between items */
+    max-width: 250px; /* Set maximum width for each item */
+}
+
+.pan-item img {
+    max-width: 100%; /* Set the maximum width for the images */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.pan-item h3 {
+    margin-top: 10px; /* Add margin between image and header */
+}
+
+.pan-item p {
+    margin-top: 5px; /* Add margin between header and paragraph */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-image: url('images/chalkboard.jpeg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Align content to the top and bottom of the page */
+    height: 100vh;
+}
+
+.altlogo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 10%; /* Adjust the size of the logo as needed */
+    height: auto;
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+}
+
+.rotate img {
+    transition: 1s ease;
+}
+
+.rotate img:hover {
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    transition: 1s ease;
+}
+
+header {
+    text-align: center;
+    padding: 0;
+    margin-top: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 10px 50px; /* Add horizontal spacing between the subpages */
+}
+
+
+
+
+.pan-image {
+    max-width: 40%; /* Adjust the size as needed */
+    display: block; /* To center the image horizontally */
+    margin: 0 auto; /* To center the image horizontally */
+    margin-top: 50px; /* Add margin to position it at the bottom */
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+}
+
+.rotate-pan img {
+    transition: 1s ease;
+}
+
+.rotate-pan img:hover {
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    transition: 1s ease;
+}
+
+
+
+/* Styles for the paella images and text */
+.paella-type-image {
+    width: 20%; /* Adjust the width as needed */
+    height: auto;
+    margin: 0 -10px; /* No margin between images */
+    display: block; /* To prevent inline alignment issues */
+}
+
+/* Flex container for the row layout */
+.paella-types {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row if necessary */
+    justify-content: space-around; /* Horizontally distribute items with space around them */
+    align-items: flex-start; /* Align items to the top of the container */
+    margin-top: 20px; /* Add margin at the top for spacing */
+    width: 80%; /* Adjust the width of the container */
+    margin: 0 auto; /* Center the container */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------INGREDIENTS/RECIPE---------------------------------*/
+
+.Prep {
+    max-width: 30%;
+    display: block; /* To center the image horizontally */
+    margin: 0 auto; /* To center the image horizontally */
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.grill {
+    max-width: 15%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.arrangement {
+    max-width: 25%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.rice-pot {
+    max-width: 25%;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Add the following styles to your existing CSS file */
+
+.ingredients-list {
+    margin-top: 20px; /* Adjust the margin-top as needed for spacing */
+}
+
+.ingredients-list ul {
+    list-style-type: none;
+}
+
+.ingredients-list li {
+    margin-bottom: 12px;
+}
+
+.ingredients-list input[type="checkbox"] {
+    display: none;
+}
+
+.ingredients-list label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.ingredients-list label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ed752f; /* Adjust border color */
+    border-radius: 4px;
+    background-color: white;
+}
+
+.ingredients-list input[type="checkbox"]:checked + label:before {
+    background-color: #ed752f; /* Adjust background color when checked */
+}
+
+/* Styles for the checklist */
+.ingredients-list {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px; /* Add padding for better readability */
+    z-index: 1; /* Ensure the checklist is above the image */
+    margin: 0 auto;
+    padding-top: 900px;
+    padding-bottom: 30px;
+}
+
+/* Styles for the all-food image */
+.all-food {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for the footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%; /* Add this line to make the footer full width */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-row {
+    margin-bottom: 10px; /* Adjust the margin between rows */
+}
+
+.footer-logo {
+    font-family: Arial, sans-serif;
+    color: #ed752f; /* Change the text color to orange */
+    font-weight: bold;
+    font-size: 9pt;
+    letter-spacing: 1px; /* Adjust the letter spacing as needed */
+}
+
+.footer-text {
+    font-family: Baskerville, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 8pt;
+    letter-spacing: 1.5px; /* Adjust the letter spacing as needed */
+}
+
+.footer-row img {
+    margin: 0 5px;
+    width: 20px; /* Adjust the size as needed */
+    height: auto;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
